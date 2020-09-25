@@ -1,0 +1,278 @@
+@charset "UTF-8";
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family: Roboto;
+	font-size: 14px;
+}
+
+#body-login {
+	background-color: #00909C;
+}
+
+#body-flex-login {
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+#container-login {
+	display: flex;
+	width: 820px;
+	height: 610px;
+	background-color: white;
+}
+
+#container-login-left {
+	color: red;
+	padding: 0 16px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 380px;
+	height: 610px;
+	background-image: url("../Image/login-left.jpg");
+}
+
+#header-login {
+	margin-top: 32px;
+}
+
+#text-logo {
+	font-size: 48px;
+}
+
+#hint-text-logo {
+	font-size: 12px;
+	opacity: 0.7;
+}
+
+#header-left span {
+	text-align: center;
+}
+
+#header-bottom-left span {
+	margin-left: 8px;
+}
+
+#container-login-right {
+	display: flex;
+	flex: 1;
+	padding: 24px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+#header-top-right {
+	font-size: 20px;
+	color: #878787;
+}
+
+.actived {
+	color: #DA7C79;
+}
+
+#container-social-login {
+	align-self: flex-end;
+	margin-bottom: 16px;
+}
+
+#container-center-login-right input[type=text] {
+	margin-top: 8px;
+}
+
+#container-center-login-right input[type=password] {
+	height: 38px;
+	border: 0;
+	background-color: #D8D8D8;
+	width: 100%;
+}
+
+#container-center-login-right input[type=submit] {
+	margin-top: 24px;
+	color: white;
+	font-size: 14px;
+}
+
+.maternial-textinput {
+	height: 38px;
+	border: 0;
+	background-color: #D8D8D8;
+	width: 100%;
+	margin-top: 42px;
+}
+
+.maternial-primary-button {
+	height: 38px;
+	border: 0;
+	background-color: #00909C;
+	width: 100%;
+}
+/* .input-icon-email {
+	background: url(../Image/icon_email.png) ;
+	height:10px;
+	width:10px;
+	border: 0;
+	background-color: #D8D8D8;
+	
+}
+.input-icon-password{
+		background: url(../Image/icon_password.png) no-repeat scroll 2px 2px;
+	height:10px;
+	width:10px;
+	border: 0;
+	background-color: #D8D8D8;
+	
+} */
+/* End css đăng nhập*/
+
+/* css trang chu*/
+#rinkitori>a {
+	color: yellow !important;
+	font-size: 40px !important;
+}
+
+#header {
+	height: 662px;
+	background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
+		url("../Image/b2.jpg") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.none_nav {
+	border: none !important;
+	background: none !important;
+}
+
+.navbar-center {
+	margin-left: 25% !important;
+}
+
+.navbar-nav a {
+	color: white !important;
+}
+
+.active>a {
+	color: #0167ff !important;
+	background: none !important;
+	font-weight: bolder;
+}
+
+.open>a {
+	color: #0167ff !important;
+	background: none !important;
+	font-weight: bolder;
+}
+
+.dropdown-menu {
+	background: #0167ff !important;
+}
+
+.event_header {
+	text-align: center;
+	margin-top: 216px;
+}
+
+.event_header>span {
+	color: white;
+}
+
+.event_header>button {
+	color: white;
+	background-color: #00ffff;
+	border: #00ffff;
+}
+
+.icon {
+	width: 48px;
+	height: 48px;
+}
+
+#info {
+	text-align: center;
+	margin-top: 48px;
+}
+
+#info span {
+	margin-top: 16px;
+}
+
+#title-sanpham {
+	margin-top: 100px;
+	font-size: 32px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.sanpham img {
+	height: 256px;
+}
+
+.sanpham {
+	padding-bottom: 16px;
+	margin-top: 30px;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	margin-left: 3px;
+	margin-right: 3px;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.gia {
+	font-size: 14px;
+	color: red;
+	margin-bottom: 16px;
+	padding-bottom: 16px;
+}
+
+@media ( max-width : 575.98px) {
+	.navbar-center {
+		margin-left: 0 !important;
+	}
+}
+
+@media ( min-width : 576px) and (max-width: 767.98px) {
+	.navbar-center {
+		margin-left: 0 !important;
+	}
+}
+
+#footer {
+	
+	margin-top: 42px;
+	color: white;
+	background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)),
+		url("../Image/bìaooter.jpg") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#footer p{
+	text-align: center;
+}
+.title-footer {
+	
+	font-size: 32px;
+}
+
+@media ( min-width : 768px) and (max-width: 991.98px) {
+	.navbar-center {
+		margin-left: 8% !important;
+	}
+}
+
+@media ( min-width : 992px) and (max-width: 1199.98px) {
+}
+
+@media ( min-width : 1200px) {
+}
+
+/* End css trang chu*/
