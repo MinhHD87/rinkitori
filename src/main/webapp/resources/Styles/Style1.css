@@ -74,6 +74,11 @@ html, body {
 .actived {
 	color: #DA7C79;
 }
+.container-singup-form{
+	display: none;
+}
+
+
 
 #container-social-login {
 	align-self: flex-end;
@@ -262,6 +267,42 @@ html, body {
 	
 	font-size: 32px;
 }
+
+/* chitiet */
+
+#header_chitiet{
+	     
+	
+}
+ul {
+  list-style-type: none;
+}
+a:hover{
+	 text-decoration: none;
+}
+.mymenu{
+	padding: 0;
+	margin: 0;
+}
+.mymenu li{
+	font-size: 16px;
+	font-weight: 500px;
+	margin: 2px;
+}
+/* End chitiet */
+/* menu da cap trang chi tiet  */
+/* 
+ .mymenu li >ul {
+
+  display: none;display: none;
+  
+}
+.mymenu  li:hover >ul{
+	display:  block;
+}
+ */
+
+/*End  menu da cap trang chi tiet  */
 
 @media ( min-width : 768px) and (max-width: 991.98px) {
 	.navbar-center {

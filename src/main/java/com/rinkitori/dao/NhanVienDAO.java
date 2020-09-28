@@ -16,9 +16,10 @@ import com.rinkitori.entity.NhanVien;
 public class NhanVienDAO implements NhanVienImp {
 	@Autowired
 	SessionFactory sessionFactory;
-
+	
+	@Override
 	@Transactional
-	public boolean KiemTraDangNhap(String email, String matkhau) {
+		public boolean KiemTraDangNhap(String email, String matkhau) {
 		Session session = sessionFactory.getCurrentSession();
 		try {
 			NhanVien nhanVien = (NhanVien) session
@@ -33,6 +34,18 @@ public class NhanVienDAO implements NhanVienImp {
 			return false;
 		}
 
+	}
+
+	@Override
+	@Transactional
+	public boolean ThemNhanVien(NhanVien nhanVien) {
+		Session session = sessionFactory.getCurrentSession();
+		int manhanvien =(int) session.save(nhanVien);
+		System.out.println(manhanvien);
+		if(manhanvien>0) {
+			return true;
+		}
+		return false;
 	}
 
 }
